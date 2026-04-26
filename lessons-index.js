@@ -23,6 +23,15 @@ const LESSONS_INDEX = [
     dataPath: "lessons/2026-04-16/flashcards-data.js",
   },
 
+  {
+    id: "2026-04-23",
+    date: "2026-04-23",
+    title: "AULA 5: Microexpressões e Vocabulário da Casa",
+    theme: "リアクション表現・家",
+    dataVar: "LESSON_DATA_20260423",
+    dataPath: "lessons/2026-04-23/flashcards-data.js",
+  },
+
   // 次のレッスンはここに追加:
 
 ];
