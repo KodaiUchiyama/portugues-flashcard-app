@@ -330,6 +330,16 @@ window.LESSON_DATA_20260430 = {
       example_ja: "海外に住んでいても、彼はポルトガル語を話す。\n彼はレバノン系のルーツを持っていても…",
       notes: "譲歩の構文。mesmo + 動詞のgerúndio（〜ing形）。英語の \"even though\" に相当",
     },
+    {
+      id: "2026-04-30-vocab-024",
+      category: "vocabulary",
+      subcategory: "word",
+      front: "gerúndio（ジェルンジオ）とは？",
+      back: "動詞の〜ing形。語尾: -ar→ando / -er→endo / -ir→indo",
+      example_pt: "falar → falando（話している）\ncomer → comendo（食べている）\nter → tendo（持っている）",
+      example_ja: "Estou trabalhando. → 今働いています。\nEle saiu sorrindo. → 笑いながら出た。\nMesmo tendo raízes… → 〜ルーツを持っていても",
+      notes: "①進行形 estar + gerúndio ②〜しながら ③mesmo + gerúndio（〜であっても）の3用法が重要",
+    },
 
   ],
 };
