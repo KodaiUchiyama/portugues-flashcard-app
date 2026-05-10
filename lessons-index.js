@@ -32,6 +32,15 @@ const LESSONS_INDEX = [
     dataPath: "lessons/2026-04-23/flashcards-data.js",
   },
 
+  {
+    id: "2026-04-30",
+    date: "2026-04-30",
+    title: "AULA 6: Paradoxo Brasileiro — Suavização e Conectores Naturais",
+    theme: "ブラジル文化・会話の自然さ",
+    dataVar: "LESSON_DATA_20260430",
+    dataPath: "lessons/2026-04-30/flashcards-data.js",
+  },
+
   // 次のレッスンはここに追加:
 
 ];
