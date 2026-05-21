@@ -41,6 +41,15 @@ const LESSONS_INDEX = [
     dataPath: "lessons/2026-04-30/flashcards-data.js",
   },
 
+  {
+    id: "2026-05-14",
+    date: "2026-05-14",
+    title: "AULA 7: Suavização, Diminutivos e Conectores Vivos",
+    theme: "言葉の和らげ方・縮小辞・接続詞",
+    dataVar: "LESSON_DATA_20260514",
+    dataPath: "lessons/2026-05-14/flashcards-data.js",
+  },
+
   // 次のレッスンはここに追加:
 
 ];
