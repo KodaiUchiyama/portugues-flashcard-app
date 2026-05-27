@@ -50,6 +50,15 @@ const LESSONS_INDEX = [
     dataPath: "lessons/2026-05-14/flashcards-data.js",
   },
 
+  {
+    id: "2026-05-21",
+    date: "2026-05-21",
+    title: "AULA 8: Emoção na Fala — Interjeições e Expressividade",
+    theme: "感情表現・イントネーション",
+    dataVar: "LESSON_DATA_20260521",
+    dataPath: "lessons/2026-05-21/flashcards-data.js",
+  },
+
   // 次のレッスンはここに追加:
 
 ];
