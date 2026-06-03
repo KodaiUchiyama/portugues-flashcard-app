@@ -59,6 +59,15 @@ const LESSONS_INDEX = [
     dataPath: "lessons/2026-05-21/flashcards-data.js",
   },
 
+  {
+    id: "2026-06-03",
+    date: "2026-06-03",
+    title: "AULA 9: Falar Errado Não Tem Problemas — Reparação e Fluência Social",
+    theme: "言い直し戦略・会話の流暢さ",
+    dataVar: "LESSON_DATA_20260603",
+    dataPath: "lessons/2026-06-03/flashcards-data.js",
+  },
+
   // 次のレッスンはここに追加:
 
 ];
