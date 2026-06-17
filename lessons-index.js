@@ -68,6 +68,15 @@ const LESSONS_INDEX = [
     dataPath: "lessons/2026-06-03/flashcards-data.js",
   },
 
+  {
+    id: "2026-06-11",
+    date: "2026-06-11",
+    title: "AULA 10: Conversando Sobre Nossa Experiência na Disney de Tóquio",
+    theme: "感情表現・旅行体験を語る",
+    dataVar: "LESSON_DATA_20260611",
+    dataPath: "lessons/2026-06-11/flashcards-data.js",
+  },
+
   // 次のレッスンはここに追加:
 
 ];
