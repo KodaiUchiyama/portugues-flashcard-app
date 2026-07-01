@@ -143,6 +143,19 @@ window.LESSON_DATA_20260624 = {
       notes: "estar com um pressentimento = 予感がしている。Eu acho que hoje vai. = 今日はいけると思う（勝てそうという確信）",
     },
 
+    // ---- 応用ディベート（Debate avançado）--------------------------
+
+    {
+      id: "2026-06-24-phrase-004b",
+      category: "phrase",
+      subcategory: "grammar",
+      front: "Até que ponto a pressão da torcida influencia os jogadores?",
+      back: "サポーターのプレッシャーは選手にどこまで影響するか？（= To what extent does the fans' pressure influence the players?）",
+      example_pt: "Até que ponto a pressão da torcida influencia os jogadores? Isso varia muito de jogador para jogador.",
+      example_ja: "サポーターのプレッシャーは選手にどこまで影響するか？それは選手によってかなり違う。",
+      notes: "até que ponto = どこまで、どの程度まで（= to what extent）。程度・限界を尋ねる定番の疑問表現。Até que ponto você confia nele? のように応用できる",
+    },
+
     // ---- 試合中の反応（Durante o Jogo — reações espontâneas）-----
 
     {
