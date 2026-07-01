@@ -77,6 +77,15 @@ const LESSONS_INDEX = [
     dataPath: "lessons/2026-06-11/flashcards-data.js",
   },
 
+  {
+    id: "2026-06-17",
+    date: "2026-06-17",
+    title: "AULA 11: Disney de Tóquio — Experiências, Opiniões e Compreensão Oral",
+    theme: "体験語彙・意見表現・聞き取り",
+    dataVar: "LESSON_DATA_20260617",
+    dataPath: "lessons/2026-06-17/flashcards-data.js",
+  },
+
   // 次のレッスンはここに追加:
 
 ];
