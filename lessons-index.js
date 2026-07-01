@@ -86,6 +86,15 @@ const LESSONS_INDEX = [
     dataPath: "lessons/2026-06-17/flashcards-data.js",
   },
 
+  {
+    id: "2026-06-24",
+    date: "2026-06-24",
+    title: "AULA 12: Copa do Mundo 2026 — Vocabulário do Futebol",
+    theme: "サッカー・ワールドカップ実況表現",
+    dataVar: "LESSON_DATA_20260624",
+    dataPath: "lessons/2026-06-24/flashcards-data.js",
+  },
+
   // 次のレッスンはここに追加:
 
 ];
