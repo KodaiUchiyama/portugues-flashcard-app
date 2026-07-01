@@ -122,6 +122,17 @@ window.LESSON_DATA_20260624 = {
     },
 
     {
+      id: "2026-06-24-vocab-006b",
+      category: "vocabulary",
+      subcategory: "grammar",
+      front: "não importa + 疑問詞",
+      back: "〜でも構わない、〜でもいい（= no matter + question word）",
+      example_pt: "Não importa quando, não importa onde — eu vou torcer pelo Brasil.",
+      example_ja: "いつでも、どこでも構わない — 私はブラジルを応援する。",
+      notes: "não importa quando（いつでもいい）／ quem（誰でもいい）／ o que（何でもいい）／ onde（どこでもいい）／ quanto custa（いくらかかってもいい）。「não importa + 疑問詞」という型で幅広く応用できる",
+    },
+
+    {
       id: "2026-06-24-vocab-007",
       category: "vocabulary",
       subcategory: "word",
