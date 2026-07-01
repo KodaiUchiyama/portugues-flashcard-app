@@ -180,6 +180,19 @@ window.LESSON_DATA_20260617 = {
       notes: "再帰動詞（verbo reflexivo）。eu me diverti / você se divertiu / nós nos divertimos",
     },
 
+    // ---- 文法：ir + infinitivo ------------------------------------
+
+    {
+      id: "2026-06-17-vocab-016",
+      category: "vocabulary",
+      subcategory: "grammar",
+      front: "ir + infinitivo",
+      back: "〜しに行く（= to go do something）",
+      example_pt: "Eu sentei no chão quando fui ver os fogos de artifício.",
+      example_ja: "花火を見に行ったとき、地面に座った。",
+      notes: "ir（活用）+ 動詞の原形。前置詞なしで直接つなぐ：Fui ver（見に行った）、Fui comer（食べに行った）、Vou comprar（買いに行く）。英語の \"go + to + verb\" と同じ発想",
+    },
+
     // ---- 聞き取り教材より重要フレーズ ----------------------------
 
     {
