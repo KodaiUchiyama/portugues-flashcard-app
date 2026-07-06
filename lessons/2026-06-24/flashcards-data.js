@@ -338,5 +338,242 @@ window.LESSON_DATA_20260624 = {
       notes: "ブラジル人の会話でよく出るサッカー比喩表現。文脈で意味を判断する文化理解の練習として重要",
     },
 
+    // ---- ゴール後の表現（Após um gol — comemoração）---------------
+
+    {
+      id: "2026-06-24-phrase-011",
+      category: "phrase",
+      subcategory: "reaction",
+      front: "Gooooooooool!",
+      back: "ゴォォォル！（= Goooooal!）",
+      example_pt: "Gooooooooool! Eu sabia!",
+      example_ja: "ゴォォォル！やっぱりね！",
+      notes: "実況・応援での定番の叫び声。母音を伸ばして興奮を表現する（テレビ実況の様式を再現）",
+    },
+
+    {
+      id: "2026-06-24-phrase-012",
+      category: "phrase",
+      subcategory: "reaction",
+      front: "Eu sabia!",
+      back: "やっぱりね！わかってた！（= I knew it!）",
+      example_pt: "Gol aos 89 minutos! Eu sabia que o time não ia desistir.",
+      example_ja: "89分でゴール！このチームは諦めないってわかってた！",
+      notes: "sabia = saber（知る）の imperfeito。予感が的中したときの決まり文句",
+    },
+
+    {
+      id: "2026-06-24-phrase-013",
+      category: "phrase",
+      subcategory: "reaction",
+      front: "Que golaço!",
+      back: "なんてすごいゴール！（= What a screamer / amazing goal!）",
+      example_pt: "Que golaço! Ele bateu de fora da área!",
+      example_ja: "なんてすごいゴール！エリア外から決めた！",
+      notes: "golaço = gol（ゴール）+ 増大辞「-aço」で「特に素晴らしいゴール」を強調する口語表現",
+    },
+
+    {
+      id: "2026-06-24-vocab-018",
+      category: "vocabulary",
+      subcategory: "expression",
+      front: "agora o jogo mudou",
+      back: "これで試合の流れが変わった。（= now the game has changed）",
+      example_pt: "Com esse gol, agora o jogo mudou completamente.",
+      example_ja: "このゴールで、試合の流れが完全に変わった。",
+      notes: "mudar = 変わる。ゴールの後に流れ・雰囲気が一変したときに使う定番表現",
+    },
+
+    {
+      id: "2026-06-24-vocab-019",
+      category: "vocabulary",
+      subcategory: "expression",
+      front: "isso dá confiança para o time",
+      back: "それがチームに自信を与える。（= that gives the team confidence）",
+      example_pt: "Fazer o primeiro gol logo cedo, isso dá confiança para o time.",
+      example_ja: "早い時間に先制点を取ること、それがチームに自信を与える。",
+      notes: "dar confiança para = 〜に自信を与える。dar + 名詞 + para で「〜に〜を与える」という基本構文",
+    },
+
+    {
+      id: "2026-06-24-vocab-020",
+      category: "vocabulary",
+      subcategory: "word",
+      front: "merecido",
+      back: "当然の、値するに相応しい（= well-deserved）",
+      example_pt: "Merecido! Ele treinou muito para isso.",
+      example_ja: "当然だ！彼はこのために猛練習した。",
+      notes: "merecer（値する）の過去分詞。単独で「Merecido!」と使うと「当然の結果だ！」という感嘆になる",
+    },
+
+    {
+      id: "2026-06-24-phrase-014",
+      category: "phrase",
+      subcategory: "shadowing",
+      front: "Nossa, que lance! Cê viu o passe?",
+      back: "うわ、なんてプレー！パス見た？（= Wow, what a play! Did you see that pass?）",
+      example_pt: "Carlos: Nossa, que lance! Cê viu o passe? / João: O passe foi bonito, mas a finalização foi ainda melhor.",
+      example_ja: "カルロス「うわ、なんてプレー！パス見た？」/ ジョアン「パスも綺麗だったけど、フィニッシュの方がもっとよかった。」",
+      notes: "lance = プレーの場面。Cê = Você の口語短縮形。友人同士のカジュアルな会話の典型例",
+    },
+
+    {
+      id: "2026-06-24-phrase-015",
+      category: "phrase",
+      subcategory: "shadowing",
+      front: "Esse tipo de lance decide o campeonato.",
+      back: "こういうプレーが優勝を決める。（= this kind of play decides the championship.）",
+      example_pt: "Concordo. O goleiro não tinha chance. Esse tipo de lance decide o campeonato.",
+      example_ja: "同感。ゴールキーパーにはどうしようもなかった。こういうプレーが優勝を決めるんだ。",
+      notes: "decidir = 決定する。O goleiro não tinha chance. = ゴールキーパーには防ぐチャンスがなかった",
+    },
+
+    // ---- 劣勢時の表現（Quando o time está perdendo）---------------
+
+    {
+      id: "2026-06-24-phrase-016",
+      category: "phrase",
+      subcategory: "reaction",
+      front: "Ainda dá tempo.",
+      back: "まだ時間はある。（= there's still time.）",
+      example_pt: "Falta 15 minutos. Ainda dá tempo de virar o jogo.",
+      example_ja: "残り15分。まだ試合をひっくり返す時間はある。",
+      notes: "dar tempo = 時間が十分にある。ainda（まだ）を伴って希望を捨てないニュアンスを表す",
+    },
+
+    {
+      id: "2026-06-24-phrase-017",
+      category: "phrase",
+      subcategory: "reaction",
+      front: "O jogo só acaba quando termina.",
+      back: "試合は終わるまで終わらない。（= it's not over until it's over.）",
+      example_pt: "Estamos perdendo, mas o jogo só acaba quando termina.",
+      example_ja: "負けているけど、試合は終わるまで終わらない。",
+      notes: "só + acaba quando termina という反復的な表現で「最後まで諦めない」という決まり文句",
+    },
+
+    {
+      id: "2026-06-24-phrase-018",
+      category: "phrase",
+      subcategory: "reaction",
+      front: "O time precisa acordar!",
+      back: "チームは目を覚ます必要がある！（= the team needs to wake up!）",
+      example_pt: "O time precisa acordar! Estão jogando devagar demais.",
+      example_ja: "チームは目を覚ます必要がある！プレーが遅すぎる。",
+      notes: "acordar = 目覚める。比喩的に「集中力・気迫を取り戻す」という意味で使われる",
+    },
+
+    {
+      id: "2026-06-24-vocab-021",
+      category: "vocabulary",
+      subcategory: "expression",
+      front: "falta intensidade, falta entrosamento",
+      back: "強度が足りない、連携が足りない。（= lacking intensity, lacking chemistry）",
+      example_pt: "Falta intensidade, falta entrosamento. O time parece dois times diferentes.",
+      example_ja: "強度が足りない、連携が足りない。チームがまるで別の二つのチームのようだ。",
+      notes: "faltar + 名詞 = 〜が足りない。entrosamento = 選手同士の連携・呼吸の合い方",
+    },
+
+    {
+      id: "2026-06-24-vocab-022",
+      category: "vocabulary",
+      subcategory: "expression",
+      front: "tá faltando criatividade",
+      back: "創造性が足りていない。（= creativity is lacking）",
+      example_pt: "Tá faltando criatividade no ataque do time.",
+      example_ja: "チームの攻撃に創造性が足りていない。",
+      notes: "tá faltando + 名詞 = 〜が不足している（口語的）。faltar は主語が「不足しているもの」になる点に注意",
+    },
+
+    {
+      id: "2026-06-24-phrase-019",
+      category: "phrase",
+      subcategory: "reaction",
+      front: "Não estamos conseguindo criar oportunidades.",
+      back: "チャンスを作れていない。（= we're not managing to create opportunities.）",
+      example_pt: "No primeiro tempo contra o Japão, o time não estava conseguindo criar oportunidades.",
+      example_ja: "日本戦の前半、チームはチャンスを作れていなかった。",
+      notes: "conseguir + infinitivo = 〜することができる。não conseguir + infinitivo = 〜することができていない",
+    },
+
+    {
+      id: "2026-06-24-phrase-020",
+      category: "phrase",
+      subcategory: "reaction",
+      front: "O adversário está dominando o meio de campo.",
+      back: "相手が中盤を支配している。（= the opponent is dominating midfield.）",
+      example_pt: "O Japão estava dominando muito bem o meio de campo.",
+      example_ja: "日本は中盤をとてもうまく支配していた。",
+      notes: "meio de campo = 中盤（ミッドフィールド）。dominar = 支配する。試合展開を語る基本語彙",
+    },
+
+    {
+      id: "2026-06-24-phrase-021",
+      category: "phrase",
+      subcategory: "shadowing",
+      front: "O problema é que o time não está conseguindo jogar.",
+      back: "問題は、チームがプレーできていないということだ。（= the problem is the team isn't managing to play.）",
+      example_pt: "Pai: O problema não é o resultado. / Filho: Então qual é o problema? / Pai: O problema é que o time não está conseguindo jogar.",
+      example_ja: "父「問題は結果じゃない。」/ 息子「じゃあ何が問題？」/ 父「問題はチームがプレーできていないということだ。」",
+      notes: "O problema é que + 節 = 問題は〜ということだ。親子の会話形式で自然な意見交換の流れを学ぶ例",
+    },
+
+    {
+      id: "2026-06-24-phrase-022",
+      category: "phrase",
+      subcategory: "shadowing",
+      front: "Parece que falta organização.",
+      back: "組織力が足りていないようだ。（= it seems like organization is lacking.）",
+      example_pt: "Concordo. Parece que falta organização.",
+      example_ja: "同感。組織力が足りていないようだ。",
+      notes: "parece que + 節 = 〜のようだ。断定を避けて意見を柔らかく述べる表現（faltar と組み合わせて頻出）",
+    },
+
+    // ---- 家族間の議論（Discussões familiares durante o jogo）-----
+
+    {
+      id: "2026-06-24-phrase-023",
+      category: "phrase",
+      subcategory: "reaction",
+      front: "Esse técnico não entende nada.",
+      back: "この監督は何もわかっていない。（= this coach doesn't understand anything.）",
+      example_pt: "Tio: Esse técnico não entende nada. / Sobrinho: Eu discordo. O problema não é o técnico.",
+      example_ja: "叔父「この監督は何もわかっていない。」/ 甥「僕は反対だな。問題は監督じゃないよ。」",
+      notes: "não entende nada = 全く理解していない（強い批判の口語表現）。técnico = 監督",
+    },
+
+    {
+      id: "2026-06-24-phrase-024",
+      category: "phrase",
+      subcategory: "reaction",
+      front: "Eu discordo.",
+      back: "私は反対だ、同意しない。（= I disagree.）",
+      example_pt: "Eu discordo. O problema não é o técnico, são os jogadores.",
+      example_ja: "私は反対だ。問題は監督じゃなくて選手たちだ。",
+      notes: "discordar（反対する）⇔ concordar（同意する）。家族・友人との議論で意見を表明する基本表現",
+    },
+
+    {
+      id: "2026-06-24-phrase-025",
+      category: "phrase",
+      subcategory: "reaction",
+      front: "Os jogadores também precisam assumir responsabilidade.",
+      back: "選手たちも責任を負う必要がある。（= the players also need to take responsibility.）",
+      example_pt: "Mas os jogadores também precisam assumir responsabilidade.",
+      example_ja: "でも選手たちも責任を負う必要がある。",
+      notes: "assumir responsabilidade = 責任を引き受ける。também（〜も）で相手の意見に部分的に反論するニュアンス",
+    },
+
+    {
+      id: "2026-06-24-vocab-023",
+      category: "vocabulary",
+      subcategory: "grammar",
+      front: "teria feito",
+      back: "〜していただろう（実際にはしなかった仮定・後悔の未来）（= would have done）",
+      example_pt: "Talvez, mas eu teria feito mudanças diferentes.",
+      example_ja: "かもしれないけど、僕なら違う采配をしていただろう。",
+      notes: "teria（ter の条件法）+ feito（過去分詞）。実際には起こらなかった仮定の行動を述べる構文。「もし自分だったら〜していた」という監督批判・後知恵の議論でよく使われる",
+    },
+
   ],
 };
