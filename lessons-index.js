@@ -95,6 +95,24 @@ const LESSONS_INDEX = [
     dataPath: "lessons/2026-06-24/flashcards-data.js",
   },
 
+  {
+    id: "2026-07-15",
+    date: "2026-07-15",
+    title: "AULA 13: Copa do Mundo — Análise Pós-jogo e Expressões Idiomáticas",
+    theme: "試合後分析・サッカー慣用句・ポジション名",
+    dataVar: "LESSON_DATA_20260715",
+    dataPath: "lessons/2026-07-15/flashcards-data.js",
+  },
+
+  {
+    id: "2026-07-22",
+    date: "2026-07-22",
+    title: "AULA 14: Expressando Opiniões — Concordar, Discordar e Prever",
+    theme: "意見表現・同意・反論・予測",
+    dataVar: "LESSON_DATA_20260722",
+    dataPath: "lessons/2026-07-22/flashcards-data.js",
+  },
+
   // 次のレッスンはここに追加:
 
 ];

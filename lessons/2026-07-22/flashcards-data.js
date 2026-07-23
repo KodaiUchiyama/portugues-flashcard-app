@@ -3,7 +3,7 @@ window.LESSON_DATA_20260722 = {
   lesson: {
     id: "2026-07-22",
     date: "2026-07-22",
-    title: "AULA 11: Expressando Opiniões — Concordar, Discordar e Prever",
+    title: "AULA 14: Expressando Opiniões — Concordar, Discordar e Prever",
     theme: "意見表現・同意・反論・予測",
   },
 
