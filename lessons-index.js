@@ -69,21 +69,30 @@ const LESSONS_INDEX = [
   },
 
   {
-    id: "2026-07-15",
-    date: "2026-07-15",
-    title: "AULA 10: Copa do Mundo 2026 — Vocabulário e Expressões do Futebol",
-    theme: "サッカー表現・試合の語彙",
-    dataVar: "LESSON_DATA_20260715",
-    dataPath: "lessons/2026-07-15/flashcards-data.js",
+    id: "2026-06-11",
+    date: "2026-06-11",
+    title: "AULA 10: Conversando Sobre Nossa Experiência na Disney de Tóquio",
+    theme: "感情表現・旅行体験を語る",
+    dataVar: "LESSON_DATA_20260611",
+    dataPath: "lessons/2026-06-11/flashcards-data.js",
   },
 
   {
-    id: "2026-07-22",
-    date: "2026-07-22",
-    title: "AULA 11: Expressando Opiniões — Concordar, Discordar e Prever",
-    theme: "意見表現・同意・反論・予測",
-    dataVar: "LESSON_DATA_20260722",
-    dataPath: "lessons/2026-07-22/flashcards-data.js",
+    id: "2026-06-17",
+    date: "2026-06-17",
+    title: "AULA 11: Disney de Tóquio — Experiências, Opiniões e Compreensão Oral",
+    theme: "体験語彙・意見表現・聞き取り",
+    dataVar: "LESSON_DATA_20260617",
+    dataPath: "lessons/2026-06-17/flashcards-data.js",
+  },
+
+  {
+    id: "2026-06-24",
+    date: "2026-06-24",
+    title: "AULA 12: Copa do Mundo 2026 — Vocabulário do Futebol",
+    theme: "サッカー・ワールドカップ実況表現",
+    dataVar: "LESSON_DATA_20260624",
+    dataPath: "lessons/2026-06-24/flashcards-data.js",
   },
 
   // 次のレッスンはここに追加:
