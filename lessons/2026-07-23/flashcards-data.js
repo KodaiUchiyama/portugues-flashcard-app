@@ -224,6 +224,29 @@ window.LESSON_DATA_20260723 = {
       notes: "ninguém = 誰も〜しない。em seguida = その後・次に。enquanto = 〜している間に",
     },
 
+    // ---- 人種・民族の呼び方 --------------------------------------
+
+    {
+      id: "2026-07-23-vocab-013",
+      category: "vocabulary",
+      subcategory: "word",
+      front: "branco / branca",
+      back: "白人（= white person）",
+      example_pt: "No time do Brasil há jogadores brancos, negros e pardos.",
+      example_ja: "ブラジルのチームには白人、黒人、混血の選手がいる。",
+      notes: "最も一般的・中立的な表現。pardo = 混血・茶色（ブラジル政府の公式分類にある）",
+    },
+    {
+      id: "2026-07-23-vocab-014",
+      category: "vocabulary",
+      subcategory: "word",
+      front: "asiático / asiática",
+      back: "アジア人（= Asian person）",
+      example_pt: "Você é asiático? — Sou, sou japonês.",
+      example_ja: "「アジア系ですか？」「はい、日本人です。」",
+      notes: "現代的・丁寧な表現。ブラジルでは中国人・韓国人でも「japonês」と呼ばれることが多い（特にサンパウロ）。「oriental」は古い表現",
+    },
+
     // ---- アルゼンチン・人種に関する表現 --------------------------
 
     {
