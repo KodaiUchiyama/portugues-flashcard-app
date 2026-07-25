@@ -224,5 +224,28 @@ window.LESSON_DATA_20260723 = {
       notes: "ninguém = 誰も〜しない。em seguida = その後・次に。enquanto = 〜している間に",
     },
 
+    // ---- アルゼンチン・人種に関する表現 --------------------------
+
+    {
+      id: "2026-07-23-phrase-009",
+      category: "phrase",
+      subcategory: "conversation",
+      front: "アルゼンチンのチームには黒人がいません。",
+      back: "No time da Argentina não tem nenhum negro.",
+      example_pt: "— Por que você não gosta da Argentina? — Porque no time deles não tem nenhum negro.",
+      example_ja: "「なんでアルゼンチンが嫌いなの？」「チームに黒人が一人もいないから。」",
+      notes: "negro = 黒人（ブラジルでは中立・尊重ある表現）。nenhum = 一人も〜ない（= not a single one）",
+    },
+    {
+      id: "2026-07-23-phrase-010",
+      category: "phrase",
+      subcategory: "conversation",
+      front: "アルゼンチンは人種差別が多い印象があります。",
+      back: "Tenho a impressão de que a Argentina tem muito racismo.",
+      example_pt: "Tenho a impressão de que a Argentina tem muito racismo. O time deles reflete isso.",
+      example_ja: "アルゼンチンは人種差別が多い印象がある。チームの構成もそれを反映している。",
+      notes: "racismo = 人種差別。tenho a impressão de que = 〜という印象がある（AULA 14で学習）",
+    },
+
   ],
 };
