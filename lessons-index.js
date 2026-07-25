@@ -113,6 +113,15 @@ const LESSONS_INDEX = [
     dataPath: "lessons/2026-07-22/flashcards-data.js",
   },
 
+  {
+    id: "2026-07-23",
+    date: "2026-07-23",
+    title: "AULA 15: Sábado à Tarde com os Amigos — Churrasco e Conversa Natural",
+    theme: "チュラスコ・自然な会話・挨拶",
+    dataVar: "LESSON_DATA_20260723",
+    dataPath: "lessons/2026-07-23/flashcards-data.js",
+  },
+
   // 次のレッスンはここに追加:
 
 ];
