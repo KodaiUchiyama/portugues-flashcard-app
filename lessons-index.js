@@ -122,6 +122,15 @@ const LESSONS_INDEX = [
     dataPath: "lessons/2026-07-23/flashcards-data.js",
   },
 
+  {
+    id: "2026-07-30",
+    date: "2026-07-30",
+    title: "AULA 16: O Assunto Muda Sozinho — Clima e Conectores",
+    theme: "話題転換・天気の会話・接続詞",
+    dataVar: "LESSON_DATA_20260730",
+    dataPath: "lessons/2026-07-30/flashcards-data.js",
+  },
+
   // 次のレッスンはここに追加:
 
 ];
