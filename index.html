@@ -243,14 +243,46 @@
       font-size: clamp(1rem, 3.5vw, 1.25rem);
       font-weight: 800;
       color: var(--green); text-align: center;
-      margin-bottom: 12px; width: 100%;
+      min-width: 0;
     }
     .back-example {
       font-size: .875rem; font-style: italic;
       text-align: center; line-height: 1.65;
-      margin-bottom: 4px; width: 100%;
+      min-width: 0;
       white-space: pre-line;
     }
+
+    /* ---- Speech buttons ---- */
+    .speak-row {
+      display: flex; align-items: center; justify-content: center;
+      gap: 8px; width: 100%;
+    }
+    .speak-row.top { align-items: flex-start; }
+    #cb-meaning-row { margin-bottom: 12px; }
+    #cb-example-row { margin-bottom: 4px; }
+
+    .btn-speak {
+      display: inline-flex; align-items: center; justify-content: center;
+      width: 34px; height: 34px; flex-shrink: 0; padding: 0;
+      background: var(--surface); color: var(--blue);
+      border: 1.5px solid var(--border); border-radius: 50%;
+      cursor: pointer;
+      transition: background .15s, border-color .15s, color .15s, transform .12s;
+      touch-action: manipulation;
+      -webkit-tap-highlight-color: transparent;
+    }
+    .btn-speak svg { width: 18px; height: 18px; }
+    .btn-speak.sm       { width: 28px; height: 28px; }
+    .btn-speak.sm svg   { width: 15px; height: 15px; }
+    @media (hover: hover) {
+      .btn-speak:hover { border-color: var(--blue); background: var(--blue-light); }
+    }
+    .btn-speak:active { transform: scale(.92); }
+    .btn-speak.speaking {
+      border-color: var(--blue); background: var(--blue); color: #fff;
+    }
+    .btn-speak-corner { position: absolute; top: 12px; right: 12px; }
+    body.no-speech .btn-speak { display: none !important; }
     .back-example-ja {
       font-size: .78rem; color: var(--muted);
       text-align: center; margin-bottom: 10px;
@@ -422,15 +454,49 @@
       <div class="card-3d" id="card-3d">
 
         <div class="card-face card-front">
+          <button class="btn-speak btn-speak-corner" id="cf-speak"
+                  onclick="App.speak(event,'front')" aria-label="ポルトガル語を読み上げる">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                 stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M11 5 6 9H3v6h3l5 4z"/>
+              <path d="M15.5 8.5a5 5 0 0 1 0 7"/>
+              <path d="M18.5 5.5a9 9 0 0 1 0 13"/>
+            </svg>
+          </button>
           <div class="cat-badge" id="cf-badge"></div>
           <div class="front-text"  id="cf-text"></div>
           <div class="front-hint"  id="cf-hint">タップして確認</div>
         </div>
 
         <div class="card-face card-back">
-          <div class="cat-badge"       id="cb-badge"></div>
-          <div class="back-meaning"    id="cb-meaning"></div>
-          <div class="back-example"    id="cb-example"></div>
+          <div class="cat-badge" id="cb-badge"></div>
+
+          <div class="speak-row" id="cb-meaning-row">
+            <div class="back-meaning" id="cb-meaning"></div>
+            <button class="btn-speak sm" id="cb-speak-term"
+                    onclick="App.speak(event,'term')" aria-label="単語を読み上げる">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                   stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M11 5 6 9H3v6h3l5 4z"/>
+                <path d="M15.5 8.5a5 5 0 0 1 0 7"/>
+                <path d="M18.5 5.5a9 9 0 0 1 0 13"/>
+              </svg>
+            </button>
+          </div>
+
+          <div class="speak-row top" id="cb-example-row">
+            <div class="back-example" id="cb-example"></div>
+            <button class="btn-speak sm" id="cb-speak-ex"
+                    onclick="App.speak(event,'example')" aria-label="例文を読み上げる">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                   stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M11 5 6 9H3v6h3l5 4z"/>
+                <path d="M15.5 8.5a5 5 0 0 1 0 7"/>
+                <path d="M18.5 5.5a9 9 0 0 1 0 13"/>
+              </svg>
+            </button>
+          </div>
+
           <div class="back-example-ja" id="cb-example-ja"></div>
           <div class="back-notes"      id="cb-notes"></div>
         </div>
@@ -486,6 +552,71 @@ const CATEGORY_LABELS = {
   reformular:  '言い換え',
 };
 
+// ---- ポルトガル語読み上げ（Web Speech API）----
+// 日本語文字を含むカード（文法解説など）はラテン文字部分だけを読み上げる
+const JP_CHARS = /[　-〿぀-ヿㇰ-ㇿ一-鿿＀-￯]/g;
+
+function speakableText(s) {
+  if (!s) return '';
+  const t = String(s)
+    .replace(JP_CHARS, ' ')
+    .replace(/[+＝=]+\s*$/, '')
+    .replace(/\s+/g, ' ')
+    .trim();
+  // ラテン文字が2文字以上残っていなければ読み上げ対象にしない
+  return /[a-zA-ZÀ-ÿ]{2,}/.test(t) ? t : '';
+}
+
+const Speech = {
+  supported: 'speechSynthesis' in window,
+  voice: null,
+  btn:   null,
+  _u:    null,
+
+  init() {
+    if (!this.supported) { document.body.classList.add('no-speech'); return; }
+    const pick = () => {
+      const vs = speechSynthesis.getVoices() || [];
+      this.voice = vs.find(v => /^pt[-_]BR$/i.test(v.lang))
+                || vs.find(v => /^pt/i.test(v.lang))
+                || null;
+    };
+    pick();
+    speechSynthesis.addEventListener('voiceschanged', pick);
+  },
+
+  _clear() {
+    if (this.btn) this.btn.classList.remove('speaking');
+    this.btn = null;
+  },
+
+  stop() {
+    if (!this.supported) return;
+    this._u = null;
+    speechSynthesis.cancel();
+    this._clear();
+  },
+
+  speak(text, btn) {
+    if (!this.supported || !text) return;
+    // 再生中の同じボタンをもう一度押したら停止
+    const isSame = this.btn === btn && (speechSynthesis.speaking || speechSynthesis.pending);
+    this.stop();
+    if (isSame) return;
+
+    const u = new SpeechSynthesisUtterance(text);
+    u.lang = this.voice ? this.voice.lang : 'pt-BR';
+    if (this.voice) u.voice = this.voice;
+    u.rate = .92;
+    u.onend = u.onerror = () => { if (this._u === u) this._clear(); };
+
+    this._u  = u;
+    this.btn = btn;
+    if (btn) btn.classList.add('speaking');
+    speechSynthesis.speak(u);
+  },
+};
+
 const Progress = {
   get()              { try { return JSON.parse(localStorage.getItem('pt_progress') || '{}'); } catch { return {}; } },
   save(cardId, stat) { const p = this.get(); p[cardId] = { stat, date: new Date().toISOString().slice(0,10) }; localStorage.setItem('pt_progress', JSON.stringify(p)); },
@@ -504,9 +635,11 @@ const state = {
   order:        'seq',
   selCats:      new Set(['all']),
   results:      [],
+  speakTexts:   { front: '', term: '', example: '' },
 };
 
 function show(id) {
+  Speech.stop();
   document.querySelectorAll('.screen').forEach(s => s.classList.remove('active'));
   document.getElementById(id).classList.add('active');
   window.scrollTo(0, 0);
@@ -656,6 +789,7 @@ const App = {
     const card  = state.sessionCards[i];
     const total = state.sessionCards.length;
     state.flipped = false;
+    Speech.stop();
     document.getElementById('card-3d').classList.remove('flipped');
 
     document.getElementById('prog-fill').style.width  = (i / total * 100) + '%';
@@ -672,15 +806,32 @@ const App = {
     const exPt  = card.example_pt || '';
     const exJa  = card.example_ja || '';
     const notes = card.notes || '';
-    document.getElementById('cb-example')   .textContent    = exPt;
-    document.getElementById('cb-example')   .style.display  = exPt   ? '' : 'none';
+    document.getElementById('cb-example')    .textContent   = exPt;
+    document.getElementById('cb-example-row').style.display = exPt   ? 'flex' : 'none';
     document.getElementById('cb-example-ja').textContent    = exJa;
     document.getElementById('cb-example-ja').style.display  = exJa   ? '' : 'none';
     document.getElementById('cb-notes')     .textContent    = notes;
     document.getElementById('cb-notes')     .style.display  = notes  ? '' : 'none';
 
+    // 読み上げ（ポルトガル語のみ）
+    // 表面は日本語→ポルトガル語モードのとき答えを漏らさないよう非表示にする
+    const term = speakableText(card.front);
+    state.speakTexts = {
+      front:   isBtoF ? '' : term,
+      term:    term,
+      example: speakableText(exPt),
+    };
+    document.getElementById('cf-speak')     .style.display = state.speakTexts.front   ? '' : 'none';
+    document.getElementById('cb-speak-term').style.display = state.speakTexts.term    ? '' : 'none';
+    document.getElementById('cb-speak-ex')  .style.display = state.speakTexts.example ? '' : 'none';
+
     document.getElementById('wrap-reveal') .style.display = '';
     document.getElementById('wrap-actions').style.display = 'none';
+  },
+
+  speak(ev, which) {
+    ev.stopPropagation();
+    Speech.speak(state.speakTexts[which] || '', ev.currentTarget);
   },
 
   onCardTap() {
@@ -748,6 +899,7 @@ const App = {
   restart() { this.startSession(); },
 };
 
+Speech.init();
 App.showHome();
 </script>
 </body>
