@@ -200,10 +200,10 @@ window.LESSON_DATA_20260806 = {
       category: "vocabulary",
       subcategory: "expression",
       front: "fuei jyutaku",
-      back: "扶養住宅手当（= housing allowance, 日本語からの借用語）",
-      example_pt: "Além da bolsa, eu recebia fuei jyutaku de 5.000 ienes.",
-      example_ja: "奨学金に加えて、5千円の扶養住宅手当ももらっていた。",
-      notes: "日本語の「扶養住宅」がそのままポルトガル語会話に借用された例。日本在住経験者ならではの語彙",
+      back: "府営住宅（大阪府が運営する公営住宅、= prefectural public housing, 日本語からの借用語）",
+      example_pt: "Eu morava num fuei jyutaku e pagava 5.000 ienes de aluguel.",
+      example_ja: "私は府営住宅に住んでいて、家賃5千円を払っていた。",
+      notes: "日本語の「府営住宅」がそのままポルトガル語会話に借用された例。府（大阪府など）が運営する低家賃の公営住宅。日本在住経験者ならではの語彙",
     },
 
     {
