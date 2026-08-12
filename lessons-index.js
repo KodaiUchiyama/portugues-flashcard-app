@@ -131,6 +131,15 @@ const LESSONS_INDEX = [
     dataPath: "lessons/2026-07-30/flashcards-data.js",
   },
 
+  {
+    id: "2026-08-06",
+    date: "2026-08-06",
+    title: "AULA 17: Como é o Japão? — Falando da Vida no Japão",
+    theme: "日本での生活を語る・意見を展開する",
+    dataVar: "LESSON_DATA_20260806",
+    dataPath: "lessons/2026-08-06/flashcards-data.js",
+  },
+
   // 次のレッスンはここに追加:
 
 ];
