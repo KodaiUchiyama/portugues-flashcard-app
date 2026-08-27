@@ -140,6 +140,24 @@ const LESSONS_INDEX = [
     dataPath: "lessons/2026-08-06/flashcards-data.js",
   },
 
+  {
+    id: "2026-08-13",
+    date: "2026-08-13",
+    title: "AULA 18: Como Vocês Se Conheceram? — Contando a História do Casal",
+    theme: "馴れ初め・過去の出来事の整理・家族の呼称",
+    dataVar: "LESSON_DATA_20260813",
+    dataPath: "lessons/2026-08-13/flashcards-data.js",
+  },
+
+  {
+    id: "2026-08-20",
+    date: "2026-08-20",
+    title: "AULA 19: O Café da Minha Esposa — Empreendedorismo e Comida Mineira",
+    theme: "起業ストーリー・ミナス料理・お店の説明",
+    dataVar: "LESSON_DATA_20260820",
+    dataPath: "lessons/2026-08-20/flashcards-data.js",
+  },
+
   // 次のレッスンはここに追加:
 
 ];
