@@ -158,6 +158,15 @@ const LESSONS_INDEX = [
     dataPath: "lessons/2026-08-20/flashcards-data.js",
   },
 
+  {
+    id: "2026-08-27",
+    date: "2026-08-27",
+    title: "AULA 20: Coisas que Você Fazia Quando Era Criança",
+    theme: "子供時代の思い出・ブラジルの教育制度",
+    dataVar: "LESSON_DATA_20260827",
+    dataPath: "lessons/2026-08-27/flashcards-data.js",
+  },
+
   // 次のレッスンはここに追加:
 
 ];
