@@ -167,6 +167,15 @@ const LESSONS_INDEX = [
     dataPath: "lessons/2026-08-27/flashcards-data.js",
   },
 
+  {
+    id: "2026-09-03",
+    date: "2026-09-03",
+    title: "AULA 21: Se Você Ganhasse Muito Dinheiro — Período Hipotético",
+    theme: "仮定法・条件文（Se + imperfeito do subjuntivo, futuro do pretérito）",
+    dataVar: "LESSON_DATA_20260903",
+    dataPath: "lessons/2026-09-03/flashcards-data.js",
+  },
+
   // 次のレッスンはここに追加:
 
 ];
