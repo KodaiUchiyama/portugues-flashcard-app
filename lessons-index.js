@@ -176,6 +176,15 @@ const LESSONS_INDEX = [
     dataPath: "lessons/2026-09-03/flashcards-data.js",
   },
 
+  {
+    id: "2026-09-10",
+    date: "2026-09-10",
+    title: "AULA 22: Primeiros Trabalhos — Voz Ativa e Passiva",
+    theme: "初めての仕事を語る・能動態と受動態",
+    dataVar: "LESSON_DATA_20260910",
+    dataPath: "lessons/2026-09-10/flashcards-data.js",
+  },
+
   // 次のレッスンはここに追加:
 
 ];
