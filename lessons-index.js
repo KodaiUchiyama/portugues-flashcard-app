@@ -185,6 +185,15 @@ const LESSONS_INDEX = [
     dataPath: "lessons/2026-09-10/flashcards-data.js",
   },
 
+  {
+    id: "2026-09-17",
+    date: "2026-09-17",
+    title: "AULA 23: Preparação para Viagem para a China",
+    theme: "中国旅行の準備・会話のきっかけ作り",
+    dataVar: "LESSON_DATA_20260917",
+    dataPath: "lessons/2026-09-17/flashcards-data.js",
+  },
+
   // 次のレッスンはここに追加:
 
 ];
