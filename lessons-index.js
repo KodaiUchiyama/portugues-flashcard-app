@@ -194,6 +194,15 @@ const LESSONS_INDEX = [
     dataPath: "lessons/2026-09-17/flashcards-data.js",
   },
 
+  {
+    id: "2026-09-24",
+    date: "2026-09-24",
+    title: "AULA 24: Comida Chinesa e China no Mapa",
+    theme: "中華料理の文化・地図で見る中国・日本・ブラジル",
+    dataVar: "LESSON_DATA_20260924",
+    dataPath: "lessons/2026-09-24/flashcards-data.js",
+  },
+
   // 次のレッスンはここに追加:
 
 ];
