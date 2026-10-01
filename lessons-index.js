@@ -203,6 +203,15 @@ const LESSONS_INDEX = [
     dataPath: "lessons/2026-09-24/flashcards-data.js",
   },
 
+  {
+    id: "2026-10-01",
+    date: "2026-10-01",
+    title: "AULA 25: Preços e Números — Costumar + Infinitivo",
+    theme: "値段を語る文法（costumar）・数字の読み方",
+    dataVar: "LESSON_DATA_20261001",
+    dataPath: "lessons/2026-10-01/flashcards-data.js",
+  },
+
   // 次のレッスンはここに追加:
 
 ];
