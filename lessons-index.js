@@ -212,6 +212,15 @@ const LESSONS_INDEX = [
     dataPath: "lessons/2026-10-01/flashcards-data.js",
   },
 
+  {
+    id: "2026-11-05",
+    date: "2026-11-05",
+    title: "AULA 26: Economia, Geografia e Objetos do Dia a Dia",
+    theme: "経済構造・地理語彙・身の回りの物",
+    dataVar: "LESSON_DATA_20261105",
+    dataPath: "lessons/2026-11-05/flashcards-data.js",
+  },
+
   // 次のレッスンはここに追加:
 
 ];
