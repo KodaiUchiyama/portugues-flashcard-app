@@ -230,6 +230,15 @@ const LESSONS_INDEX = [
     dataPath: "lessons/2026-11-12/flashcards-data.js",
   },
 
+  {
+    id: "2026-11-19",
+    date: "2026-11-19",
+    title: "AULA 28: As Muralhas da China — Comparações e Voz Passiva",
+    theme: "規模の比較表現・受動態（demorar/levar + ser construído）",
+    dataVar: "LESSON_DATA_20261119",
+    dataPath: "lessons/2026-11-19/flashcards-data.js",
+  },
+
   // 次のレッスンはここに追加:
 
 ];
