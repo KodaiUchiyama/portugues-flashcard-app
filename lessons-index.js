@@ -221,6 +221,15 @@ const LESSONS_INDEX = [
     dataPath: "lessons/2026-11-05/flashcards-data.js",
   },
 
+  {
+    id: "2026-11-12",
+    date: "2026-11-12",
+    title: "AULA 27: A Classe Média da China — Aumentar e Diminuir",
+    theme: "経済・社会変化を語る語彙と文法（aumentar/diminuir, se + indicativo）",
+    dataVar: "LESSON_DATA_20261112",
+    dataPath: "lessons/2026-11-12/flashcards-data.js",
+  },
+
   // 次のレッスンはここに追加:
 
 ];
